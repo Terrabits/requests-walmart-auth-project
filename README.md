@@ -1,12 +1,12 @@
 # Requests Walmart Auth Project
 
-For getting started with the [Walmart Affiliate Marketplace (REST) API](https://walmart.io/docs/affiliate/) and the python `requests-walmart-auth` library.
+A project for getting started with the [Walmart Affiliate Marketplace (REST) API](https://walmart.io/docs/affiliate/) and the python `requests-walmart-auth` library.
 
 
 ## Requirements
 
 - Python 3.7+
-- requests-walmart-auth ~= 1.0.0
+- requests-walmart-auth ~= 1.0.1
 
 ## Install
 
