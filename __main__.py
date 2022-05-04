@@ -8,8 +8,8 @@ private_key_file = root_path / 'secrets' / 'private_key.pem'
 
 
 # constants
-CONSUMER_ID  = '150eab5a-acb8-4e58-a438-55ec954dbb86'
-KEY_VERSION  = '2'
+CONSUMER_ID  = '12345678-1234-1234-1234-123456789012'
+KEY_VERSION  = '1'
 TAXONOMY_URL = 'https://developer.api.walmart.com/api-proxy/service/affil/product/v2/taxonomy'
 
 
