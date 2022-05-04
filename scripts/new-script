@@ -1,0 +1,27 @@
+#!/usr/bin/env bash -o errexit
+ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+cd "$ROOT_DIR"
+
+# args
+name="$1"
+
+# read name from stdin?
+if [ -z "${name}" ]; then
+  read -p "new script: " name
+fi
+
+# no name?
+if [ -z "${name}" ]; then
+  echo error: missing script name
+  exit 1
+fi
+
+# invalid name?
+if ! [[ "$name" =~ ^[[:digit:][:alnum:]_-]+$ ]]; then
+  echo script names can only contain alphanumeric characters, underscore and hyphens
+  exit 2
+fi
+
+# create new script
+cp scripts/.boilerplate "scripts/$name"
+chmod u+x "scripts/$name"

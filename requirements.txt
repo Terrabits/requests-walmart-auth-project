@@ -1,0 +1,1 @@
+requests-walmart-auth~=1.0.1
